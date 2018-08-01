@@ -40,7 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeoManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\pluralsight-wcf-core\GeoLib.Core\GeoLib.Core.csproj">
+      <Project>{461922d9-747f-4bb0-ac2e-4737139eedb6}</Project>
+      <Name>GeoLib.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\pluralsight-wcf-core\GeoLib.Data\GeoLib.Data.csproj">
+      <Project>{db2ca02f-5d34-4734-8a44-634bfd381244}</Project>
+      <Name>GeoLib.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GeoLib.Contracts\GeoLib.Contracts.csproj">
+      <Project>{706c33cc-5b46-48f1-be5d-a01741f5ea9d}</Project>
+      <Name>GeoLib.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
