@@ -1,10 +1,6 @@
 ﻿using GeoLib.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 
 
 namespace Geolib.ConsoleHost
@@ -18,8 +14,9 @@ namespace Geolib.ConsoleHost
 
 			Console.WriteLine("Services started. Press [Enter] to exit");
 			Console.ReadLine();
-
+			
 			hostGeoManager.Close();
 		}
+
 	}
 }
